@@ -56,12 +56,7 @@ status --is-interactive; and source (rbenv init -|psub)
 
 ## YARN
 
-# set -x -g PATH $HOME/.yarn/bin $PATH
 set -x -g PATH (yarn global bin) $PATH
-
-# set -x -g PATH $PATH $HOME/.yarn/bin
-# set -x -g PATH $PATH $HOME/.nodenv/versions/6.10.1/bin
-# set -x -g PATH $PATH $HOME"/.config/yarn/global/node_modules/.bin"
 
 ## GRUNT
 

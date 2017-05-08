@@ -6,6 +6,7 @@ set nobackup                  " remove tmp file backups
 set noswapfile                " remove swap files
 set nowb                      " prevent automatic write backup
 set smartcase                 " only search by case if at least 1 letter is uppercase
+set backspace=2               " delete over linebreaks and indentation
 
 
 " *** VIM PLUG ***

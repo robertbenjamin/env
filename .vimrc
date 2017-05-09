@@ -72,7 +72,6 @@ if $ITERM_PROFILE != ""
 end
 
 
-set so=999                    " keep vim cursor in the middle of the screen for visual context
 set shiftwidth=2              " indent uses 2 spaces
 set tabstop=2                 " show 2 spaces per tab
 set softtabstop=2             " add 2 spaces when a tab is added
@@ -92,9 +91,11 @@ set incsearch                 " search as characters are entered
 set hlsearch                  " hightlight matches
 
 
+
+" keep vim cursor in the middle of the screen
 " move vertically by visual line (not actual line)
-nnoremap j gj
-nnoremap k gk
+nnoremap j gjzz
+nnoremap k gkzz
 " set jk to escape
 inoremap jk <esc>
 

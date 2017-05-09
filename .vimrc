@@ -8,6 +8,8 @@ set nowb                      " prevent automatic write backup
 set smartcase                 " only search by case if at least 1 letter is uppercase
 set backspace=2               " delete over linebreaks and indentation
 
+set mouse=a                   " allow mouse usage in all modes
+set clipboard=unnamed         " copy/paste etc. work with system clipboard
 
 " *** VIM PLUG ***
 call plug#begin('~/.vim/plugged')
@@ -25,8 +27,8 @@ call plug#end()
 
 " *** AIRLINE ***
 let g:airline_section_c='%{getcwd()}/%t'
-let g:airline_section_x=0    " disable tagbar, filetype, virtualenv section
-let g:airline_section_y=0    " disable fileencoding, fileformat section
+let g:airline_section_x=0     " disable tagbar, filetype, virtualenv section
+let g:airline_section_y=0     " disable fileencoding, fileformat section
 " let g:airline_section_z='%3pp %l:%c'
 
 

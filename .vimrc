@@ -7,6 +7,7 @@ set noswapfile                " remove swap files
 set nowb                      " prevent automatic write backup
 set smartcase                 " only search by case if at least 1 letter is uppercase
 set backspace=2               " delete over linebreaks and indentation
+set ttyfast                   " faster vim
 
 set mouse=a                   " allow mouse usage in all modes
 set clipboard=unnamed         " copy/paste etc. work with system clipboard
@@ -18,7 +19,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/ctrlp.vim'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'elixir-lang/vim-elixir'
+Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'tyrannicaltoucan/vim-quantum'
 Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'reedes/vim-colors-pencil'
@@ -83,13 +84,11 @@ set expandtab                 " turn tabs into spaces
 set number                    " show number lines
 filetype indent on            " load filetype specific indentation
 set wildmenu                  " show visual autocomplete
-set lazyredraw                " minimize redrawing
 set showmatch                 " highlight matching parens
 
 
 set incsearch                 " search as characters are entered
 set hlsearch                  " hightlight matches
-
 
 
 " keep vim cursor in the middle of the screen

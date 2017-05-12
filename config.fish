@@ -38,11 +38,9 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder
 
 alias sfish="source /Users/robertbenjamin/.config/fish/config.fish"
 
-alias vvim="vim -u /Users/robertbenjamin/Dropbox/Coding/essential.vim"
-
 alias r="ranger"
 
-alias v="vim ."
+alias v="nvim ."
 
 # ENV VARIABLES
 

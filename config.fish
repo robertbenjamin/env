@@ -40,7 +40,7 @@ alias sfish="source /Users/robertbenjamin/.config/fish/config.fish"
 
 alias r="ranger"
 
-alias v="nvim ."
+alias n="nvim ."
 
 # ENV VARIABLES
 

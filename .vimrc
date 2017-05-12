@@ -23,7 +23,7 @@ set noshowcmd
 " *** VIM PLUG ***
 call plug#begin('~/.vim/plugged')
 Plug 'ajh17/VimCompletesMe'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'tyrannicaltoucan/vim-quantum'

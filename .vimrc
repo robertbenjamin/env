@@ -12,15 +12,17 @@ set ttyfast                   " faster vim
 set mouse=a                   " allow mouse usage in all modes
 set clipboard=unnamed         " copy/paste etc. work with system clipboard
 
+
 " *** NO STATUS BAR ***
 set noshowmode
 set noruler
 set laststatus=0
 set noshowcmd
 
+
 " *** VIM PLUG ***
 call plug#begin('~/.vim/plugged')
-" Plug 'tpope/vim-fugitive'
+Plug 'ajh17/VimCompletesMe'
 Plug 'kien/ctrlp.vim'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
@@ -28,6 +30,10 @@ Plug 'tyrannicaltoucan/vim-quantum'
 Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'reedes/vim-colors-pencil'
 call plug#end()
+
+
+" *** VIM COMPLETES ME ***
+set completeopt+=longest       " show first autocomplete item by default
 
 
 " *** CTRLP ***

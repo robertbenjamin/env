@@ -8,9 +8,7 @@ defaults write org.eyebeam.SelfControl MaxBlockLength -int 60
 
 # ALIASES
 
-alias undopush="git push -f origin HEAD^:master"
 alias gd="git diff"
-alias gdi="git icdiff"
 alias ga="git add"
 alias gcm="git commit -m"
 alias gbd="git branch -D"
@@ -47,12 +45,17 @@ alias n="nvim ."
 
 # MISC
 
+## NODENV SHIMS
+
+status --is-interactive; and source (nodenv init -|psub)
+
 ## RUBY SHIMS
 
 status --is-interactive; and source (rbenv init -|psub)
 
 ## YARN
 
+set -x -g PATH ~/.yarn/bin $PATH
 set -x -g PATH (yarn global bin) $PATH
 
 ## GRUNT

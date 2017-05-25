@@ -45,6 +45,10 @@ alias n="nvim ."
 
 # MISC
 
+## POSTGRES.APP
+
+set -x -g PATH /Applications/Postgres.app/Contents/Versions/latest/bin $PATH
+
 ## NODENV SHIMS
 
 status --is-interactive; and source (nodenv init -|psub)
@@ -52,11 +56,6 @@ status --is-interactive; and source (nodenv init -|psub)
 ## RUBY SHIMS
 
 status --is-interactive; and source (rbenv init -|psub)
-
-## YARN
-
-set -x -g PATH ~/.yarn/bin $PATH
-set -x -g PATH (yarn global bin) $PATH
 
 ## GRUNT
 

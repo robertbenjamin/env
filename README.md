@@ -21,10 +21,11 @@ I'm messing with the idea of making this section an automated script which sets 
   - vim
   - yarn
 - Sublime Text 3
+  - [Shinier Icon](https://dribbble.com/shots/3438305-Sublime-Text-Replacement-Icon-2)
 - Spark
 - Slack
 - Spotify
 - AppCleaner
 - Arq
-- Bitbar + Custom Plugin
+- Bitbar + Custom Plugin (Bit-Bus)
 - Bartender 2

@@ -22,6 +22,9 @@ I'm messing with the idea of making this section an automated script which sets 
   - yarn
 - Sublime Text 3
   - [Shinier Icon](https://dribbble.com/shots/3438305-Sublime-Text-Replacement-Icon-2)
+- Atom
+  - [Shinier Icon](https://dribbble.com/shots/2556067-Atom-io-Icon)
+- Spark
 - Spark
 - Slack
 - Spotify

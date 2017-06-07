@@ -21,9 +21,8 @@ alias grh="git reset --hard"
 alias gb="git branch"
 alias gcob="git checkout -b"
 alias gco="git checkout"
-alias gfom="git fetch origin master"
+alias gfo="git fetch origin"
 alias gpom="git pull origin master"
-alias gf="git fetch"
 
 alias gu="gitup"
 
@@ -39,6 +38,7 @@ alias n="nvim ."
 # ENV VARIABLES
 
 # set -x ENV_VARIABLE_NAME 'ENV_VARIABLE_VALUE'
+# set PATH YOUR_PATH $PATH
 
 # MISC
 

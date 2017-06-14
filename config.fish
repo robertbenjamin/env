@@ -22,6 +22,7 @@ alias gb="git branch"
 alias gcob="git checkout -b"
 alias gco="git checkout"
 alias gfo="git fetch origin"
+alias gpo="git pull origin"
 alias gpom="git pull origin master"
 
 alias gu="gitup"

@@ -12,8 +12,6 @@ I'm messing with the idea of making this section an automated script which sets 
 - Brew
   - autojump
   - fish
-  - diff-so-fancy
-  - httpie
   - node
   - mongodb
   - ranger
@@ -25,10 +23,10 @@ I'm messing with the idea of making this section an automated script which sets 
 - Atom
   - [Shinier Icon](https://dribbble.com/shots/2556067-Atom-io-Icon)
 - Spark
-- Spark
 - Slack
 - Spotify
 - AppCleaner
 - Arq
 - Bitbar + Custom Plugin (Bit-Bus)
 - Bartender 2
+- Paw

@@ -43,13 +43,13 @@ alias n="nvim ."
 
 # MISC
 
+## NODENV
+
+status --is-interactive; and source (nodenv init -|psub)
+
 ## POSTGRES.APP
 
 set PATH /Applications/Postgres.app/Contents/Versions/latest/bin $PATH
-
-## GRUNT
-
-eval (grunt --completion=bash)
 
 ## AUTOJUMP
 

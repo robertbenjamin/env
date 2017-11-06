@@ -30,6 +30,8 @@ alias gu="gitup"
 alias show="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
 alias hide="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
 
+alias fresh="gfo; gpo; git remote prune origin; dingus setup api-dev"
+
 alias sfish="source /Users/robertbenjamin/.config/fish/config.fish"
 
 alias r="ranger"

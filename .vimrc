@@ -1,6 +1,5 @@
 " *** SANE DEFAULTS ***
 set nocompatible              " be iMproved, required
-filetype off                  " required
 set noshowmode                " hide the default mode indicator
 set nobackup                  " remove tmp file backups
 set noswapfile                " remove swap files
@@ -30,6 +29,7 @@ Plug 'joukevandermaas/vim-ember-hbs', { 'for': 'handlebars' }
 Plug 'tyrannicaltoucan/vim-quantum'
 Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'reedes/vim-colors-pencil'
+Plug 'dracula/vim'
 call plug#end()
 
 
@@ -58,21 +58,26 @@ function Light()
   let g:pencil_higher_contrast_ui=1
   set background=light
 endfun
-
+" DRACULA MODE?
+function Dracula()
+  colorscheme dracula
+  set background=dark
+endfun
 
 abbreviate dac :call Dark()
 abbreviate lic :call Light()
-
+abbreviate drac :call Dracula()
 
 " *** MATCH ITERM COLOR ***
 if $ITERM_PROFILE != ""
   if $ITERM_PROFILE =~ "(Dark)"
     :call Dark()
+  elseif $ITERM_PROFILE =~ "(Dracula)"
+    :call Dracula()
   else
     :call Light()
   end
 end
-
 
 set shiftwidth=2              " indent uses 2 spaces
 set tabstop=2                 " show 2 spaces per tab

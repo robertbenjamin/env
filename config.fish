@@ -1,10 +1,6 @@
 # FISH GREETING
 
-set fish_greeting "Dammit, Robert."
-
-# SETUP SELFCONTROL BLOCK LENGTH
-
-defaults write org.eyebeam.SelfControl MaxBlockLength -int 60
+set fish_greeting "Hmm."
 
 # ALIASES
 
@@ -13,10 +9,9 @@ alias ga="git add"
 alias gcm="git commit -m"
 alias gbd="git branch -D"
 alias gst="git status -sb --ignore-submodules"
-alias gm="git merge --no-ff"
+alias gm="git merge"
 alias gp="git push"
 alias gpu="git pull"
-alias grs="git reset --soft"
 alias grh="git reset --hard"
 alias gb="git branch"
 alias gcob="git checkout -b"
@@ -24,17 +19,14 @@ alias gco="git checkout"
 alias gfo="git fetch origin"
 alias gpo="git pull origin"
 alias gpom="git pull origin master"
+alias fresh="gfo; gpo; git remote prune origin; dingus setup api-dev"
 
 alias gu="gitup"
 
 alias show="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
 alias hide="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
 
-alias fresh="gfo; gpo; git remote prune origin; dingus setup api-dev"
-
 alias sfish="source /Users/robertbenjamin/.config/fish/config.fish"
-
-alias r="ranger"
 
 alias n="nvim ."
 

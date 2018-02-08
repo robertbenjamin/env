@@ -1,6 +1,6 @@
 # FISH GREETING
 
-set fish_greeting "Hmm."
+set fish_greeting
 
 # ALIASES
 
@@ -41,9 +41,13 @@ alias n="nvim ."
 
 status --is-interactive; and source (nodenv init -|psub)
 
+## GLOBAL NPM PACKAGES
+
+set fish_user_paths (npm config get prefix)/bin
+
 ## POSTGRES.APP
 
-set PATH /Applications/Postgres.app/Contents/Versions/latest/bin $PATH
+set PATH $PATH /Applications/Postgres.app/Contents/Versions/latest/bin
 
 ## AUTOJUMP
 

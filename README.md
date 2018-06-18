@@ -19,7 +19,7 @@ My development environment configurations and setup.
   - Lots of handy Git aliases
   - Show / hide hidden files with aliases
   - Source fish config with an alias
-  - Setup Postgres, Grunt, and Autojump
+  - Setup Postgres, Node, and Autojump
 
 ## Setup
 I'm messing with the idea of making this section an automated script which sets up my development environment, but considering how infrequently I switch computers and how easy it is to transfer a whole disk over, that might be a waste of time. Nontheless, here's documentation of my basic tools and setup:

@@ -8,18 +8,19 @@ alias gd="git diff"
 alias ga="git add"
 alias gcm="git commit -m"
 alias gbd="git branch -D"
-alias gst="git status -sb --ignore-submodules"
+alias gs="git status -sb --ignore-submodules"
 alias gm="git merge"
 alias gp="git push"
 alias gpu="git pull"
 alias grh="git reset --hard"
+alias grpo="git remote prune origin"
 alias gb="git branch"
 alias gcob="git checkout -b"
 alias gco="git checkout"
 alias gfo="git fetch origin"
 alias gpo="git pull origin"
 alias gpom="git pull origin master"
-alias fresh="gfo; gpo; git remote prune origin; dingus setup api-dev"
+alias fresh="gpo; git remote prune origin"
 
 alias gu="gitup"
 
@@ -28,7 +29,7 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder
 
 alias sfish="source ~/.config/fish/config.fish"
 
-alias n="nvim ."
+# alias n="nvim ."
 
 # ENV VARIABLES
 
@@ -47,7 +48,7 @@ set fish_user_paths (npm config get prefix)/bin
 
 ## POSTGRES.APP
 
-set PATH $PATH /Applications/Postgres.app/Contents/Versions/latest/bin
+# set PATH $PATH /Applications/Postgres.app/Contents/Versions/latest/bin
 
 ## AUTOJUMP
 

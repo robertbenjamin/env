@@ -2,7 +2,7 @@
 
 set fish_greeting
 
-# ALIASES
+# GIT ALIASES
 
 alias gd="git diff"
 alias ga="git add"
@@ -20,36 +20,30 @@ alias gco="git checkout"
 alias gfo="git fetch origin"
 alias gpo="git pull origin"
 alias gpom="git pull origin master"
-alias fresh="gpo; git remote prune origin"
+alias fh="gpo; git remote prune origin; git prune"
 
-alias gu="gitup"
+# FINDER ALIASES
 
 alias show="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
 alias hide="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
 
+# FISH ALIASES
+
 alias sfish="source ~/.config/fish/config.fish"
 
-# alias n="nvim ."
+# NODENV
+
+status --is-interactive; and source (nodenv init -|psub)
+
+# GLOBAL NPM PACKAGES
+
+set fish_user_paths (npm config get prefix)/bin
+
+# AUTOJUMP
+
+[ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
 
 # ENV VARIABLES
 
 # set -x ENV_VARIABLE_NAME 'ENV_VARIABLE_VALUE'
 # set PATH YOUR_PATH $PATH
-
-# MISC
-
-## NODENV
-
-status --is-interactive; and source (nodenv init -|psub)
-
-## GLOBAL NPM PACKAGES
-
-set fish_user_paths (npm config get prefix)/bin
-
-## POSTGRES.APP
-
-# set PATH $PATH /Applications/Postgres.app/Contents/Versions/latest/bin
-
-## AUTOJUMP
-
-[ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish

@@ -4,24 +4,24 @@ set fish_greeting
 
 # GIT ALIASES
 
-abbr gd="git diff"
-abbr ga="git add"
-abbr gcm="git commit -m"
-abbr gbd="git branch -D"
-abbr gs="git status -sb --ignore-submodules"
-abbr gm="git merge"
-abbr gp="git push"
-abbr gpu="git pull"
-abbr gr="git rebase"
-abbr grh="git reset --hard"
-abbr grpo="git remote prune origin"
-abbr gb="git branch"
-abbr gcob="git checkout -b"
-abbr gco="git checkout"
-abbr gfo="git fetch origin"
-abbr gpo="git pull origin"
-abbr gpom="git pull origin master"
-abbr fh="gpo; git remote prune origin; git prune"
+abbr -a -g gd git diff
+abbr -a -g ga git add
+abbr -a -g gcm git commit -m
+abbr -a -g gbd git branch -D
+abbr -a -g gs git status -sb --ignore-submodules
+abbr -a -g gm git merge
+abbr -a -g gp git push
+abbr -a -g gpu git pull
+abbr -a -g gr git rebase
+abbr -a -g grh git reset --hard
+abbr -a -g grpo git remote prune origin
+abbr -a -g gb git branch
+abbr -a -g gcob git checkout -b
+abbr -a -g gco git checkout
+abbr -a -g gfo git fetch origin
+abbr -a -g gpo git pull origin
+abbr -a -g gpom git pull origin master
+abbr -a -g fh "git pull origin; git remote prune origin; git prune"
 
 # FINDER ALIASES
 

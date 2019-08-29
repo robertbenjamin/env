@@ -40,9 +40,25 @@ status --is-interactive; and source (nodenv init -|psub)
 
 set fish_user_paths (npm config get prefix)/bin
 
+# RBENV
+
+status --is-interactive; and source (rbenv init -|psub)
+
 # AUTOJUMP
 
 [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
+
+# YARN
+
+set YARNPATH $HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin
+
+# GO
+
+set GOPATH $HOME/go/bin
+
+# ADD PATHS
+
+set PATH $GOPATH $YARNPATH $PATH
 
 # ENV VARIABLES
 

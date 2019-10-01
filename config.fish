@@ -16,8 +16,9 @@ abbr -a -g gr git rebase
 abbr -a -g grh git reset --hard
 abbr -a -g grpo git remote prune origin
 abbr -a -g gb git branch
-abbr -a -g gcob git checkout -b
 abbr -a -g gco git checkout
+abbr -a -g gcol git checkout -
+abbr -a -g gcob git checkout -b
 abbr -a -g gfo git fetch origin
 abbr -a -g gpo git pull origin
 abbr -a -g gpom git pull origin master
@@ -31,14 +32,6 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder
 # FISH ALIASES
 
 alias sfish="source ~/.config/fish/config.fish"
-
-# NODENV
-
-status --is-interactive; and source (nodenv init -|psub)
-
-# GLOBAL NPM PACKAGES
-
-set fish_user_paths (npm config get prefix)/bin
 
 # RBENV
 

@@ -23,6 +23,8 @@ abbr -a -g gfo git fetch origin
 abbr -a -g gpo git pull origin
 abbr -a -g gpom git pull origin master
 abbr -a -g fh "git pull origin; git remote prune origin; git prune"
+abbr -a -g grd git rebase development
+abbr -a -a grc git rebase --continue
 
 # FINDER ALIASES
 

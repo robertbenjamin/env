@@ -35,6 +35,10 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder
 
 alias sfish="source ~/.config/fish/config.fish"
 
+# YARN ALIASES
+
+abbr -a -g t env DEBUG=true yarn run test
+
 # RBENV
 
 status --is-interactive; and source (rbenv init -|psub)

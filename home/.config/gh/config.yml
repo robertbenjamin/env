@@ -1,0 +1,24 @@
+# gh CLI config — managed by ~/Documents/Work/env.
+# Auth tokens live in the adjacent hosts.yml, which is NOT managed here.
+# Run `gh auth login --git-protocol ssh` to populate it.
+
+version: 1
+
+# Matches the ssh route in the README, and what `gh auth login --git-protocol ssh`
+# would set anyway. Committing it up front stops gh rewriting this file on login.
+git_protocol: ssh
+
+editor:
+prompt: enabled
+prefer_editor_prompt: disabled
+pager:
+
+aliases:
+    co: pr checkout
+
+http_unix_socket:
+browser:
+color_labels: disabled
+accessible_colors: disabled
+accessible_prompter: disabled
+spinner: enabled

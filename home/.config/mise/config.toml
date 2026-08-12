@@ -1,0 +1,19 @@
+# Global mise config — managed by ~/Documents/Work/env
+# "Works like a local mise.toml, but applies to every directory."
+#
+# This replaces both the old .node-version pin and the imperative `fnm default`
+# call that install.sh used to make: the versions live here, and `mise install`
+# reconciles the machine to them. Project-local mise.toml / .tool-versions files
+# still override these per directory.
+#
+# Note that mise does NOT read .node-version, .nvmrc and friends unless
+# idiomatic version files are explicitly enabled — they are off by default.
+
+[tools]
+node = "24.14.1"
+
+# Global CLI tooling, via mise's npm backend. Pinned to latest deliberately:
+# these are editor/LSP tools where current is what you want, and mise keeps
+# them off the node installation so switching node versions cannot lose them.
+"npm:typescript" = "latest"
+"npm:typescript-language-server" = "latest"

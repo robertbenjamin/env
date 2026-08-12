@@ -1,0 +1,12 @@
+[user]
+	name = Robert Benjamin
+	email = rotberj@gmail.com
+
+[push]
+	autoSetupRemote = true
+
+[pull]
+	ff = only
+
+[init]
+	defaultbranch = main

@@ -1,0 +1,4 @@
+# Global gitignore — managed by ~/Documents/Work/env
+# Referenced by git automatically via XDG (~/.config/git/ignore).
+
+**/.claude/settings.local.json

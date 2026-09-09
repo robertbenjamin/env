@@ -11,7 +11,6 @@ brew "fish"                      # login shell
 brew "gh"
 brew "mise"                      # runtime version manager (node etc.), replaced fnm
 brew "postgresql@17"
-brew "rtk"                       # token-optimising CLI proxy, see ~/.claude/RTK.md
 brew "starship"                  # prompt
 brew "yarn"
 

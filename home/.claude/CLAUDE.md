@@ -1,5 +1,3 @@
-@RTK.md
-
 ## Background Job Guidelines
 
 For background jobs (automated runs that don't require user interaction):

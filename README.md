@@ -21,7 +21,7 @@ Replaced files are moved to `~/.env-backup/<timestamp>/` first. Re-running is sa
 
 - **Fish** — Git abbreviations, show/hide hidden files, `sfish` to reload, autojump, paths
 - **Starship** — minimal two-line prompt with Git status
-- **Claude Code** — `CLAUDE.md`, `RTK.md`, settings and the rtk hook
+- **Claude Code** — `CLAUDE.md` and settings
 - **iTerm2** — full profile, Material Palenight
 - **Brewfile** — CLI tools and apps, all from homebrew-core
 - **Zsh** — a fallback shell only; fish is the login shell

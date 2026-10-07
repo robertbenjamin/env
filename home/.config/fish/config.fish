@@ -47,7 +47,7 @@ abbr -a -g c "code"
 
 # HOMEBREW
 
-status is-interactive; and /opt/homebrew/bin/brew shellenv fish | source
+/opt/homebrew/bin/brew shellenv fish | source
 
 # AUTOJUMP
 

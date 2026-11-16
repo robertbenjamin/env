@@ -1,8 +1,21 @@
 {
-  "model": "claude-opus-4-8[1m]",
-  "effortLevel": "high",
+  "enabledPlugins": {
+    "render@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true
+  },
   "tui": "fullscreen",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"ELI15. No wall of text, format nicely with markdown. I need a clearly defined and concise response that is easily digestible.\""
+          }
+        ]
+      }
+    ]
+  },
   "autoDreamEnabled": false,
-  "agentPushNotifEnabled": true,
-  "enabledPlugins": {}
+  "agentPushNotifEnabled": true
 }

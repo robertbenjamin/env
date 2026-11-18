@@ -14,3 +14,7 @@ For background jobs (automated runs that don't require user interaction):
   own `timeout` parameter (ms) or `run_in_background` instead.
 - Checking an exit code: put `echo "rc=$?"` immediately after the binary, not after a pipeline —
   a pipeline reports only its _last_ stage, so a failed command reads as success.
+
+## Code Style
+
+- **Minimize comments.** Needing one means the code should be simpler or better named; keep only a why, a gotcha, or a magic number.
